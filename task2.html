@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+<script>
+
+
+
+
+let parentObject = {
+    name: "Parent",
+    age: 40,
+    child: {
+        name: "Child",
+        age: 10
+    }
+};
+
+parentObject.toString = function() {
+    return `Parent: { name: ${this.name}, age: ${this.age}, child: { name: ${this.child.name}, age: ${this.child.age} } }`;
+};
+
+console.log(parentObject.toString());
+
+
+    
+</script>
+</body>
+</html>
